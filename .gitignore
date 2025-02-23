@@ -1,0 +1,4 @@
+# double files
+._*
+# DSStore:
+.DS_Store
