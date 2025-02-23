@@ -59,7 +59,7 @@ get_download_url() {
   local arch=$(get_arch)
 
   if [ "${platform}" == "darwin" ]; then
-    echo "https://github.com/ollama/ollama/releases/download/v${version}/ollama-${platform}"
+    echo "https://github.com/ollama/ollama/releases/download/v${version}/ollama-${platform}.tgz"
   else
     # releases since 0.3.7 use tgz for artifact
     if [ "$(printf '%s\n' "0.3.7" "$version" | sort -rV | head -n1)" = "$version" ]; then
